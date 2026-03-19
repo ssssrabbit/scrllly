@@ -32,7 +32,7 @@
 
         header {
             text-align: center;
-            padding: 4rem 2rem;
+            padding: 4rem 2rem 6rem; /* 画像が少し被るように下部の余白を多めに */
             background-color: var(--section-bg);
             border-bottom: 1px solid rgba(128, 128, 128, 0.2);
         }
@@ -41,6 +41,7 @@
             font-size: 3rem;
             margin: 0;
             letter-spacing: -1px;
+            color: var(--primary-color); /* ロゴカラーに合わせて赤系に */
         }
 
         .tagline {
@@ -49,10 +50,26 @@
             margin-top: 0.5rem;
         }
 
+        /* スクリーンショット用のスタイル */
+        .hero-image {
+            max-width: 900px;
+            margin: -4rem auto 2rem; /* ヘッダーに少し食い込ませて立体感を出す */
+            padding: 0 1.5rem;
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* 浮き出るような影 */
+            border: 1px solid rgba(128, 128, 128, 0.2);
+        }
+
         main {
             max-width: 800px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 0 2rem 2rem;
         }
 
         section {
@@ -114,6 +131,10 @@
     <div class="tagline">The ultimate standalone teleprompter app for Mac.</div>
 </header>
 
+<div class="hero-image">
+    <img src="screenshot.png" alt="scrllly App Interface">
+</div>
+
 <main>
     <section id="about">
         <h2>About scrllly</h2>
@@ -146,7 +167,7 @@
 
     <section id="privacy-policy">
         <h2>Privacy Policy</h2>
-        <p><em>Last Updated: March 19, 2026</em></p>
+        <p><em>Last Updated: March 20, 2026</em></p>
         <p>This Privacy Policy explains how <strong>scrllly</strong> ("the App") handles your data. We believe in keeping things simple and secure.</p>
         
         <h3>1. Data Collection</h3>
