@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrllly - Teleprompter App for Mac</title>
+    <style>
+        :root {
+            --primary-color: #e53935;
+            --text-color: #333;
+            --bg-color: #f9f9f9;
+            --section-bg: #ffffff;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #ff5252;
+                --text-color: #f1f1f1;
+                --bg-color: #121212;
+                --section-bg: #1e1e1e;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+            background-color: var(--section-bg);
+            border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: gray;
+            margin-top: 0.5rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background-color: var(--section-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        ul.features {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.features li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        ul.features li::before {
+            content: "✓";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .pricing-badge {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>scrllly</h1>
+    <div class="tagline">The ultimate standalone teleprompter app for Mac.</div>
+</header>
+
+<main>
+    <section id="about">
+        <h2>About scrllly</h2>
+        <p><strong>scrllly</strong> is a powerful, straightforward teleprompter application designed exclusively for macOS. Whether you are recording a video presentation, giving a live speech, or streaming, scrllly ensures your delivery is flawless and perfectly timed.</p>
+        
+        <p>Simply paste your script, set the exact duration of your presentation, and scrllly will automatically scroll your text from start to finish. No more guessing your pacing.</p>
+    </section>
+
+    <section id="features">
+        <h2>Key Features</h2>
+        <ul class="features">
+            <li><strong>Precision Timing:</strong> Specify the exact duration in seconds, and the app will scroll the entire script seamlessly within that timeframe.</li>
+            <li><strong>Mirror Mode:</strong> Flip the text horizontally to use with physical teleprompter glass rigs.</li>
+            <li><strong>Customizable Typography:</strong> Easily change font types and sizes to ensure perfect readability at any distance.</li>
+            <li><strong>Rich Text Highlighting:</strong> Supports basic HTML tags like <code>&lt;b&gt;</code> for bold and <code>&lt;i&gt;</code> for italics, allowing you to emphasize key delivery points.</li>
+            <li><strong>Quick Skip:</strong> Missed a beat? Use the Left and Right arrow keys to instantly skip backward or forward by 5 seconds.</li>
+            <li><strong>External Display Support:</strong> Output your script directly to an external monitor or teleprompter screen.</li>
+            <li><strong>Focus Reading Line:</strong> Keep your eyes locked on the right words with an adjustable red indicator line (customizable line width).</li>
+            <li><strong>Light & Dark Modes:</strong> Choose the theme that fits your environment and reduces eye strain.</li>
+            <li><strong>Multilingual Support:</strong> Interface available in English, Japanese, Korean, Simplified Chinese, Traditional Chinese, Spanish, and Portuguese.</li>
+        </ul>
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing-badge">Free Tier Available</div>
+        <p>You can use <strong>scrllly</strong> entirely for free on your Mac's main display for scripts that are <strong>60 seconds or shorter</strong>.</p>
+        <p>For presentations exceeding 60 seconds, or to unlock external display capabilities without limitations, a premium upgrade is required.</p>
+    </section>
+
+    <section id="privacy-policy">
+        <h2>Privacy Policy</h2>
+        <p><em>Last Updated: March 19, 2026</em></p>
+        <p>This Privacy Policy explains how <strong>scrllly</strong> ("the App") handles your data. We believe in keeping things simple and secure.</p>
+        
+        <h3>1. Data Collection</h3>
+        <p>scrllly is a standalone desktop application. We <strong>do not</strong> collect, store, track, or transmit any personal information, usage analytics, or presentation scripts to our servers or any third parties. All processing happens locally on your Mac.</p>
+
+        <h3>2. Your Scripts and Files</h3>
+        <p>Any text, scripts, or files you load into scrllly remain entirely on your device. We do not have access to your content.</p>
+
+        <h3>3. Changes to This Policy</h3>
+        <p>If we update this Privacy Policy to reflect changes in our practices or app features, we will post the updated version on this page.</p>
+
+        <h3>4. Contact Us</h3>
+        <p>If you have any questions about this Privacy Policy or the app, please contact us via our GitHub repository issues page.</p>
+    </section>
+</main>
+
+<footer>
+    &copy; 2026 scrllly. All rights reserved.<br>
+    Designed for macOS.
+</footer>
+
+</body>
+</html>
